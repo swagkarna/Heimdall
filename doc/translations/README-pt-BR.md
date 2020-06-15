@@ -1,4 +1,5 @@
-# Heimdall ⚡️ [![License](https://img.shields.io/badge/License-MIT-critical.svg?style=flat-square)](https://github.com/CR3DN3/Heimdall/blob/master/LICENSE) [![Python3.8](https://img.shields.io/badge/Python-3.8-yellow.svg?style=flat-square&logo=python)](https://www.python.org/)
+# ⚡️ Heimdall ⚡️
+[![License](https://img.shields.io/badge/Licença-MIT-critical.svg?style=flat-square)](https://github.com/CR3DN3/Heimdall/blob/master/LICENSE) [![Python3.x](https://img.shields.io/badge/Python-3.8-yellow.svg?style=flat-square&logo=python)](https://www.python.org/)
 
 [![GitHub](https://img.shields.io/badge/GitHub-CR3DN3-inactive.svg?style=social&logo=github)](https://github.com/CR3DN3/)
 [![Facebook](https://img.shields.io/badge/Facebook-inactive.svg?style=social&logo=Facebook)](https://www.facebook.com/oldygor/)
@@ -10,7 +11,7 @@
 
 O Heimdall é uma ferramente de código aberto projetada para automatizar a busca do painel de administração de um site alvo usando força bruta na lista de palavras. Desenvolvida totalmente em Python, possui um código didático e simples para estudos, além de ser uma ferramenta ideal para o arsenal de hacker.
 
-## Screenshot
+## Capturas de Telas
 
 ![Screenshot](https://raw.githubusercontent.com/CR3DN3/Heimdall/master/doc/images/screenshot.png)
 

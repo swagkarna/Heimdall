@@ -1,4 +1,5 @@
-# Heimdall ⚡️ [![License](https://img.shields.io/badge/License-MIT-critical.svg?style=flat-square)](https://github.com/CR3DN3/Heimdall/blob/master/LICENSE) [![Python3.8](https://img.shields.io/badge/Python-3.8-yellow.svg?style=flat-square&logo=python)](https://www.python.org/)
+# ⚡️ Heimdall ⚡️
+[![License](https://img.shields.io/badge/License-MIT-critical.svg?style=flat-square)](https://github.com/CR3DN3/Heimdall/blob/master/LICENSE) [![Python3.8](https://img.shields.io/badge/Python-3.8-yellow.svg?style=flat-square&logo=python)](https://www.python.org/)
 
 [![GitHub](https://img.shields.io/badge/GitHub-CR3DN3-inactive.svg?style=social&logo=github)](https://github.com/CR3DN3/)
 [![Facebook](https://img.shields.io/badge/Facebook-inactive.svg?style=social&logo=Facebook)](https://www.facebook.com/oldygor/)
