@@ -9,7 +9,7 @@
 
 ## O que é isso?
 
-O Heimdall é uma ferramente de código aberto projetada para automatizar a busca do painel de administração de um site alvo usando força bruta na lista de palavras. Desenvolvida totalmente em Python, possui um código didático e simples para estudos, além de ser uma ferramenta ideal para o arsenal de hacker.
+O Heimdall é uma ferramenta de código aberto projetada para automatizar a busca do painel de administração de um site alvo usando força bruta na lista de palavras. Desenvolvida totalmente em Python, possui um código didático e simples para estudos, além de ser uma ferramenta ideal para o arsenal de hacker.
 
 ## Capturas de Telas
 

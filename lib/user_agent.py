@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
-import random
-
+from random import choice
 
 def Random():
 
@@ -26,6 +25,6 @@ def Random():
     UASafari.close()
 
     UserAgent = Chrome + Edge + Firefox + Opera + Safari
-    RandomUserAgent = random.choice(UserAgent).rstrip('\n')
+    RandomUserAgent = choice(UserAgent).rstrip('\n')
 
     return RandomUserAgent
