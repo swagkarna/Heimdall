@@ -16,7 +16,7 @@ Resolves some Heimdall
 settings for better operation.
 """
 Configuration = Config("Ygor Simões",  # Author
-                       "v4.0-alpha",  # Version
+                       "v4.0-beta",  # Version
                        "https://github.com/CR3DN3",  # GitHub
                        "https://twitter.com/CR3DN3 ")  # Twitter
 
