@@ -42,7 +42,9 @@ Optional Arguments:
 
 ## Capturas de tela
 
-![Screenshot](https://raw.githubusercontent.com/CR3DN3/Heimdall/master/doc/images/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/CR3DN3/Heimdall/master/doc/images/screenshots/screenshot.png)
+
+Você pode visitar a coleção de capturas de tela que demonstram o funcionamento em algumas plataformas clicando [aqui](https://github.com/CR3DN3/Heimdall/tree/master/doc/images/screenshots).
 
 ### Exemplos
 
