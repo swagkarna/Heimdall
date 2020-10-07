@@ -38,7 +38,7 @@ Optional Arguments:
         Print the pure colored
         Heimdall banner.
         """
-        Color.pl(r"""{O}_________________________________________________
+        Color.pl(r"""{O}__________________________________________________
                 _               _       _ _ 
       /\  /\___(_)_ __ ___   __| | __ _| | |
      / /_/ / _ \ | '_ ` _ \ / _` |/ _` | | |
@@ -50,11 +50,11 @@ Optional Arguments:
         Print design and
         author specifications.
         """
-        print(f"""\n                  Version: {self._config['Version']}
+        print(f"""\n               Version: {self._config['Version']}
     Author: {self._config['Author']} (Security Researcher)
         GitHub: {self._config['GitHub']}
         Twitter: {self._config['Twitter']}""")
-        Color.pl("{O}_________________________________________________{W}\n")
+        Color.pl("{O}__________________________________________________{W}\n")
 
 
 if __name__ == '__main__':

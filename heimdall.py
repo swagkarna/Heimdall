@@ -16,7 +16,7 @@ Resolves some Heimdall
 settings for better operation.
 """
 Configuration = Config("Ygor Simões",                  # Author
-                       "v4.0-stable",                  # Version
+                       "v4.1-stable",                  # Version
                        "https://github.com/CR3DN3",    # GitHub
                        "https://twitter.com/CR3DN3 ")  # Twitter
 
@@ -104,12 +104,14 @@ if __name__ == '__main__':
     """
     Check for available updates.
     """
-    if not args.no_update:
-        if updates['updates_automatic'] or args.update:
-            Updates = Update(configs, updates)
-            if Updates.verify():
-                Updates.upgrade()
-                exit()
+    updates_automatic = updates['updates_automatic']
+    if args.no_update:
+        updates_automatic = False
+    if updates_automatic or args.update:
+        Updates = Update(configs, updates)
+        if Updates.verify():
+            Updates.upgrade()
+            exit()
 
     """
     Activates the "helper()" method if no 
