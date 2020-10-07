@@ -29,7 +29,7 @@ Try to import libraries.
 try:
     from requests import get
 except ModuleNotFoundError as ex:
-    Color.pl("{!} %s Please install requiriments: {R}pip3 install -r requirements.txt{W}" % ex)
+    Color.pl("{!} %s Please install requirements: {R}pip3 install -r requirements.txt{W}" % ex)
 
 """
 Capture all passed 
@@ -113,7 +113,7 @@ if __name__ == '__main__':
         args.url = Configuration.target(args.url)
 
         """
-        Intance the "Request" class.
+        Instance the "Request" class.
         Generates a random User-Agent.
         """
         Set = Setter(args)
@@ -126,7 +126,7 @@ if __name__ == '__main__':
             args.proxy = Set.proxy()
 
         """
-        Intance the "Check" class.
+        Instance the "Check" class.
         Checks whether the target is online.
         """
         Checkup = Check(args)
@@ -138,7 +138,7 @@ if __name__ == '__main__':
         args.wordlist = Set.wordlist()
 
         """
-        Intance the "Finder" class.
+        Instance the "Finder" class.
         Heimdall, find!
         """
         ExploitFinder = Finder(args)

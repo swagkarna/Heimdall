@@ -32,8 +32,8 @@ class Config:
         for the Update class.
         """
         updates = {
-            "api_repositorie": "https://api.github.com/repos/CR3DN3/Heimdall/releases",
-            "repositorie": self._github + "/Heimdall",
+            "api_repository": "https://api.github.com/repos/CR3DN3/Heimdall/releases",
+            "repository": self._github + "/Heimdall",
             "updates_automatic": True
         }
         return updates

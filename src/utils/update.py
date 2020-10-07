@@ -21,9 +21,9 @@ class Update:
         Checks for updates to
         update versions.
         """
-        request = get(self._updates['api_repositorie']).json()
+        request = get(self._updates['api_repository']).json()
         if request[0]['name'] != self._configs['Version']:
-            Color.pl("{+} New version avaliabe: {G}%s{W}" % request[0]['name'])
+            Color.pl("{+} New version available: {G}%s{W}" % request[0]['name'])
             option = input(Color.s("{+} Do you want to upgrade to the latest version? [Y/n] "))
             if option == "Y" or option == "y" or option == "":
                 return True
@@ -41,7 +41,7 @@ class Update:
         """
         try:
             Color.pl("{+} Updating...")
-            os.system(f"git pull {self._updates['repositorie']}")
+            os.system(f"git pull {self._updates['repository']}")
             Color.pl("{+} Heimdall was successfully updated.")
         except Exception as ex:
             Color.pl("{!} Could not update.")
