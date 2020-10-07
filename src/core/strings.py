@@ -14,7 +14,7 @@ class Strings:
     @staticmethod
     def helper():
         print("""
-Usage: python3 heimdall.py [-h, --help] [-u, --url] [-w, --wordlist (1, 2, 3)]
+Usage: python heimdall.py [-h, --help] [-u, --url] [-w, --wordlist (1, 2, 3)]
                            [-p, --proxy <proxy>][--user-agent <custom>] [--update]
 
 Description: Heimdall is an open source tool designed to automate fetching 
@@ -28,7 +28,9 @@ Optional Arguments:
    -p, --proxy            Use a proxy to connect to the target URL
    --user-agent           Customize the User-Agent. Default: Random User-Agent
    --update               Upgrade Heimdall to its latest available version.
-        """)
+   
+   --no-update            Disables the intention of updates
+   --no-logo              Disable the initial banner\n""")
 
     @staticmethod
     def banner():
@@ -57,7 +59,7 @@ Optional Arguments:
 
 if __name__ == '__main__':
     Configuration = Config("Ygor Simões",                  # Author
-                           2.0,                            # Version
+                           2.1,                            # Version
                            "https://github.com/CR3DN3",    # GitHub
                            "https://twitter.com/CR3DN3 ")  # Twitter
 

@@ -15,9 +15,9 @@ from src.utils.setter import Setter
 Resolves some Heimdall 
 settings for better operation.
 """
-Configuration = Config("Ygor Simões",  # Author
-                       "v4.0-beta",  # Version
-                       "https://github.com/CR3DN3",  # GitHub
+Configuration = Config("Ygor Simões",                  # Author
+                       "v4.0-stable",                  # Version
+                       "https://github.com/CR3DN3",    # GitHub
                        "https://twitter.com/CR3DN3 ")  # Twitter
 
 configs = Configuration.get_configs()
@@ -70,6 +70,16 @@ parser.add_argument("--update",
                     default=False,
                     help="Upgrade Heimdall to its latest available version")
 
+parser.add_argument("--no-update",
+                    action="store_true",
+                    default=False,
+                    help="Disables the intention of updates")
+
+parser.add_argument("--no-logo",
+                    action="store_true",
+                    default=False,
+                    help="Disable the initial banner")
+
 if __name__ == '__main__':
     """
     Stores all command line arguments 
@@ -87,17 +97,19 @@ if __name__ == '__main__':
     Print the banner along with 
     Heimdall specifications.
     """
-    String.banner()
-    String.banner_description()
+    if not args.no_logo:
+        String.banner()
+        String.banner_description()
 
     """
     Check for available updates.
     """
-    if updates['updates_automatic'] or args.update:
-        Updates = Update(configs, updates)
-        if Updates.verify():
-            Updates.upgrade()
-            exit()
+    if not args.no_update:
+        if updates['updates_automatic'] or args.update:
+            Updates = Update(configs, updates)
+            if Updates.verify():
+                Updates.upgrade()
+                exit()
 
     """
     Activates the "helper()" method if no 
@@ -130,7 +142,13 @@ if __name__ == '__main__':
         Checks whether the target is online.
         """
         Checkup = Check(args)
-        Checkup.target()
+        try:
+            Checkup.target()
+            Color.pl("{+} Target On: {G}%s{W}" % args.url)
+        except Exception as ex:
+            Color.pl("{!} Error: %s" % ex)
+            Color.pl("{!} Please verify your target.")
+            exit()
 
         """
         Stores the selected word list in the variable.
@@ -145,5 +163,5 @@ if __name__ == '__main__':
         try:
             ExploitFinder.dashboard()
         except KeyboardInterrupt as ex:
-            Color.pl("{!} CTRL + C has pressed. %s" % ex)
+            Color.pl("\n{!} CTRL + C has pressed. %s" % ex)
     Color.pl("{+} Finished!    :)")

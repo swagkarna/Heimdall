@@ -23,7 +23,7 @@ Você pode baixar o tarball mais recente clicando em [aqui](https://github.com/C
 ## Modo de uso
 
 ```
-Usage: python3 heimdall.py [-h, --help] [-u, --url] [-w, --wordlist (1, 2, 3)]
+Usage: python heimdall.py [-h, --help] [-u, --url] [-w, --wordlist (1, 2, 3)]
                            [-p, --proxy <proxy>][--user-agent <custom>] [--update]
 
 Description: Heimdall is an open source tool designed to automate fetching 
@@ -37,6 +37,9 @@ Optional Arguments:
    -p, --proxy            Use a proxy to connect to the target URL
    --user-agent           Customize the User-Agent. Default: Random User-Agent
    --update               Upgrade Heimdall to its latest available version.
+   
+   --no-update            Disables the intention of updates
+   --no-logo              Disable the initial banner
 ```
 
 ## Capturas de tela

@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 from requests import get
-from src.core.color import Color
 
 
 class Check:
@@ -15,12 +14,6 @@ class Check:
 
     def target(self):
         """
-        Handling and preparing the args.url.
+        Make a request to the target.
         """
-        try:
-            request = get(self._url, proxies=self._proxy, headers=self._agent)
-            Color.pl("{+} Tagert On: {G}%s{W}" % self._url)
-        except Exception as ex:
-            Color.pl("{!} [%s]" % request.status_code)
-            Color.pl("{!} %s" % ex)
-            Color.pl("{!} Please verify your target.")
+        request = get(self._url, proxies=self._proxy, headers=self._agent)

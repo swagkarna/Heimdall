@@ -26,7 +26,6 @@ class Finder:
         Heimdall, find!
         """
         Color.pl("{+} User-Agent: %s" % self._user_agent['User-Agent'])
-        Color.pl("\n{+} {G}Heimdall, find the dashboard!{W}\n")
 
         """
         Format the target URL as simple.
@@ -39,19 +38,24 @@ class Finder:
         Create the output directory.
         """
         os.makedirs(path_out)
+        Color.pl("{+} Output: '%s'" % path_out)
 
         """
         Creates the "info.txt" file to 
         write the attack specifications.
         """
         output_info = open(os.path.realpath(f"{path_out}/info.txt"), 'w')
-        output_info.writelines(f"URL (Target): {self._url}\nProxy: {self._proxy}\nUser-Agent: {self._user_agent}\n"
-                               f"Output: {path_out}\n\nWordlist: {self._wordlist}")
+        output_info.writelines(f"[+] URL (Target): {self._url}\n"
+                               f"[+] Proxy: {self._proxy}\n"
+                               f"[+] User-Agent: {self._user_agent}\n"
+                               f"[+] Output: {path_out}\n\n"
+                               f"[+] Wordlist: {self._wordlist}")
         output_info.close()
 
         """
         Starts the request loop to the target.
         """
+        Color.pl("\n{+} {G}Heimdall, find the dashboard!{W}\n")
         for link in self._wordlist:
             target = self._url + link.rstrip("\n")
             request = get(target, proxies=self._proxy, headers=self._user_agent)
