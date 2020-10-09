@@ -24,7 +24,7 @@ You can download the latest tarball by clicking [here](https://github.com/CR3DN3
 ## Usage
 
 ```
-Usage: python heimdall.py [-h, --help] [-u, --url] [-w, --wordlist (1, 2, 3)]
+Usage: python3 heimdall.py [-h, --help] [-u, --url] [-w, --wordlist (1, 2, 3)]
                            [-p, --proxy <proxy>][--user-agent <custom>] [--update]
 
 Description: Heimdall is an open source tool designed to automate fetching 

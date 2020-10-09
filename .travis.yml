@@ -7,4 +7,4 @@ python:
 install:
   - pip install -r requirements.txt
 script:
-  - python heimdall.py --url http://testphp.vulnweb.com/
+  - python3 heimdall.py --url http://testphp.vulnweb.com/

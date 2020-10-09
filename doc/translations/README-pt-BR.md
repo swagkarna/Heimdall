@@ -23,7 +23,7 @@ Você pode baixar o tarball mais recente clicando em [aqui](https://github.com/C
 ## Modo de uso
 
 ```
-Usage: python heimdall.py [-h, --help] [-u, --url] [-w, --wordlist (1, 2, 3)]
+Usage: python3 heimdall.py [-h, --help] [-u, --url] [-w, --wordlist (1, 2, 3)]
                            [-p, --proxy <proxy>][--user-agent <custom>] [--update]
 
 Description: Heimdall is an open source tool designed to automate fetching 
