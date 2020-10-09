@@ -253,4 +253,7 @@ dmypy.json
 .vscode/extensions.json
 *.code-workspace
 
+# Heimdall
+/output/*
+
 # End of https://www.toptal.com/developers/gitignore/api/vscode,pycharm,python
